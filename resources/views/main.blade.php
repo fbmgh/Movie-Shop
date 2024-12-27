@@ -23,9 +23,14 @@
     @endif
 
     <div class="col-12">
-        <div class="dropdown" >
+        <div class="dropdown d-inline">
             <a class="btn btn-outline-dark" href="{{ url('cart-list') }}">
                <i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart <span class="badge text-bg-danger" id="cart-quantity">{{ $totalQuantity }}</span>
+            </a>
+        </div>
+        <div class="dropdown d-inline">
+            <a class="btn btn-outline-primary" href="{{ route('movies.create') }}">
+               Add New Movie
             </a>
         </div>
     </div>

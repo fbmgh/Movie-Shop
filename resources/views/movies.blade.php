@@ -1,6 +1,10 @@
 @extends('main')
    
 @section('content')
+
+<div class="mb-4">
+    <a href="{{ route('movies.search') }}" class="btn btn-outline-primary">Search Movies</a>
+</div>
     
 <div class="row">
     @foreach($movies as $movie)
@@ -50,6 +54,5 @@
         });
     });
 </script>
-
 
 @endsection
